@@ -77,7 +77,7 @@ sphereFolder.add(sphereMaterial, 'opacity', 0, 1).name('Opacity')
 sphereFolder.open()
 
 // Define a variable to store the initial y position of the camera
-let initialYPosition = camera.position.y;
+// let initialYPosition = camera.position.y;
 
 // Define a variable to track the camera's vertical movement speed
 let verticalSpeed = 0.1;
@@ -89,7 +89,7 @@ document.addEventListener('keydown', (event) => {
     // Move the camera vertically upwards
     camera.position.y += verticalSpeed;
     // Update the initial y position
-    initialYPosition = camera.position.y;
+    // initialYPosition = camera.position.y;
     console.log(camera.position.y.toFixed(3))
   }
 
@@ -98,17 +98,17 @@ document.addEventListener('keydown', (event) => {
     // Move the camera vertically upwards
     camera.position.y -= verticalSpeed;
     // Update the initial y position
-    initialYPosition = camera.position.y;
+    // initialYPosition = camera.position.y;
     console.log(camera.position.y.toFixed(3))
   }
 });
 
 // Listen for mouse wheel events
-document.addEventListener('wheel', (event) => {
-  console.log(
-    camera.position.x.toFixed(3),
-    camera.position.y.toFixed(3),
-    camera.position.z.toFixed(3))
+// document.addEventListener('wheel', (event) => {
+//   console.log(
+//     camera.position.x.toFixed(3),
+//     camera.position.y.toFixed(3),
+//     camera.position.z.toFixed(3))
   // // Check if the mouse wheel is scrolled
   // if (event.deltaY !== 0) {
   //   // Zoom in or out based on the direction of the scroll
@@ -117,7 +117,7 @@ document.addEventListener('wheel', (event) => {
   //   // Restore the initial y position
   //   camera.position.y = initialYPosition; // has issues :(
   // }
-});
+// });
 
 function animate() {
   requestAnimationFrame(animate)
